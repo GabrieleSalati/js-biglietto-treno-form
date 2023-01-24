@@ -1,29 +1,44 @@
 // VARIABLES
 
-let userName = prompt("Nome e Ccognome")
+let user = document.getElementById("userName").value;
 
-const tripLenght = prompt("Quanti km e' lungo il tuo viaggio?")
+document.getElementById("userData").innerHTML = user
 
-console.log(tripLenght);
+console.log(userData);
 
-const customerAge = prompt("Quanti anni hai?")
+const length = document.getElementById("tripLength").value;
 
-console.log(customerAge)
+document.getElementById("trip").innerHTML = length
+
+console.log(tripLength);
+
+const age = document.getElementById("customerAge").value;
+
+document.getElementById("userAge").innerHTML = age
+
+console.log(customerAge);
 
 // CALC FORMULA
 
-if (customerAge < 18) {
-    price = tripLenght * 0.21 * (1 - 20 / 100);
+if (age < 18) {
+    price = length * 0.21 * (1 - 20 / 100);
 }
 
-else if (customerAge > 65) {
-    price = tripLenght * 0.21 * (1 - 40 / 100);
+else if (age >= 65) {
+    price = length * 0.21 * (1 - 40 / 100);
 }
 
 else {
-    price = tripLenght * 0.21;
+    price = length * 0.21;
 }
 
 console.log(price);
 
-document.getElementById("result").innerHTML = price;
+// DATA PRINTING
+
+go.addEventListener(
+    "click",
+    function () {
+        document.getElementById("result").innerHTML = price;
+    }
+);

@@ -31,8 +31,12 @@ input {
     justify-content: center;
 }
 
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
 hr {
     width: 80%;
     margin: 2rem;
-    text-align: center;
 }

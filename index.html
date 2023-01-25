@@ -16,16 +16,46 @@
 
 <body>
 
-    <input id="userName" placeholder="Name & Surname" type="text">
-    <input id="tripLength" placeholder="KM" type="text">
-    <input id="customerAge" placeholder="age" type="text">
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
-    <input id="go" type="button" value="start">
+    <div class="container">
+        <div class="row">
+            <p>Nome e cognome</p>
+            <input id="userName" placeholder="Name & Surname" type="text">
+            <P>Km da percorrere</P>
+            <input id="tripLength" placeholder="KM" type="text">
+            <p>Eta'</p>
+            <input id="customerAge" placeholder="age" type="text">
+        </div>
+        <div class="row">
+            <input id="go" type="button" value="calcola">
+            <input type="button" value="annulla">
+        </div>
+    </div>
 
-    <p id="userData"></p>
-    <P id="trip"></P>
-    <p id="userAge"></p>
-    <p id="result"></p>
+    <h2>IL TUO BIGLIETTO</h2>
+
+    <div class="container">
+        <h3>DETTAGLIO PASSEGGERO</h3>
+        <hr>
+        <div class="row">
+            <h3>NOME PASSEGGERO</h3>
+            <p>Offerta</p>
+            <p>Carrozza</p>
+            <p>Codice CP</p>
+            <p>Costo biglietto</p>
+        </div>
+
+        <div class="row">
+            <p id="userData"></p>
+            <P>Biglietto standard</P>
+            <p id="carriage"></p>
+            <p id="code"></p>
+            <p id="result"></p>
+        </div>
+
+        <hr>
+    </div>
 
     <!-- JAVASCRIPT -->
 
